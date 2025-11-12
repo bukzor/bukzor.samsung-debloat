@@ -1,0 +1,2126 @@
+[
+  {
+    "package": "com.samsung.android.bixby.ondevice.esus",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.spotify.music",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.google.android.apps.photos",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.samsung.android.oneconnect",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.samsung.SMT.lang_en_us_l03",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.samsung.android.bixby.ondevice.enus",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.samsung.SMT.lang_es_us_l01",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.google.android.apps.walletnfcrel",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.samsung.android.nmt.apps.t2t.languagepack.enesus",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.google.android.apps.docs",
+    "firstInstallTime": "2008-12-31 09:00:00"
+  },
+  {
+    "package": "com.sec.android.RilServiceModeApp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.oda.service",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.permissioncontroller.forframework",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.iaft",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.providers.trash",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.telephonyui.esimclient",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.vtcamerasettings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.aodservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dsms",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.dreams.phototable",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mcfds",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartface.overlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.kpecore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.internal.systemui.navbar.sec_gestural_no_hint",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.companiondevicemanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.lool",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.downloads",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.parser",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.bluetoothmidiservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.credentialmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.printservice.recommendation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.facatfunction",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.captiveportallogin",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.vepreload",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.networkstack",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.saeupgradeoffload.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.keychain",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.gmsconfig.asi",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.ipservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.earphonetypec",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.shell",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.accessibility.talkback",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.magnifier",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softapdualap.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.bookmarkprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.carrier.logcollector",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softapwpathree.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.contacts",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.osp.app.signin",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.sharedstoragebackup",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.media",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.calendar",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.blockednumber",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.documentsui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.attestation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.knox.vpn.proxyhandler",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartcallprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.esimkeystring",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.bcservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.qmdservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.proxyhandler",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.app.newtrim",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.permissioncontroller",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.intellivoiceservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.gms.location.history",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.googleassistant",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sem.factoryapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.setupwizardlegalprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qualcomm.location",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.gm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.cameraxservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.carrierdefaultapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mdx",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.backupconfirm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mdm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.tachyon",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.hiya.star",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.securityandprivacy.android.verizon.vms",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.mtp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.accessibility.voiceaccess",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.personalization",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.theme.font.notoserifsource",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartface",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.providers.contacts",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.bbc.bbcagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.shortcutbackupservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mcfserver",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.wallpapercropper",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.accessibility",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.parentalcare",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.gmsconfig.geotz",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.systemui.navbar.gestural",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.settings.intelligence",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qualcomm.timeservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.factorykeystring",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.internal.systemui.navbar.sec_gestural",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.pushmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.bluetoothagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.watchmanagerstub",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.webview",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softapqc.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.brightnessbackupservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.systemui.navbar.threebutton",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.egg",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.videoscan",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softap.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.aircommandmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.visual.cloudcore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.networkstack",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.modem.settings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.singletake.service",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.modulemetadata.forframework",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.callbgprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.easyMover.Agent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dbsc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.container",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.epdg",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.bluelightfilter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartsuggestions",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wcmurlsnetworkstack",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.packageinstaller",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.se",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.hiddenmenu",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.location.nfwlocationprivacy",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.stk",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.hwmoduletest",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.callassistant",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.bips",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.partnersetup",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.service.tagservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.projection.gearhead",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.vzw.hss.myverizon",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qualcomm.qti.gpudrivers.pineapple.api34",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.emergencylauncher",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.carrier.carrierwifi",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.easyonehand",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.verizon.onetalk.dialer",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.setting.multisound",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.gamedriver.sm8650",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.networkstack.tethering.overlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.feedback",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.unifiedwfc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.taskedge",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.smartfpsadjuster",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dck.timesync",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.widgetapp.easymodecontactswidget",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.provider.badge",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.camera",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.honeyboard",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.safetyinformation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.downloads.ui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.ons",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.networkstack.tethering.overlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.setupwizard",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.sec.android.application.csc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.setupwizard",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.mhs.smarttethering",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.vcast.mediamanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.simappdialog",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.wallpaper.livepicker",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dynamiclock",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.display.cutout.emulation.waterfall",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.app.RilErrorNotifier",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.privacydashboard",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.ext.services",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.carkey",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.phone",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.location",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.traceur",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.routines",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dialer",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.messaging",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.location.fused",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.largetcpbuffer.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.sead",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.wlantest",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.googlequicksearchbox",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.modulemetadata",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.hearingadjust",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.containercore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.configupdater",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.forest",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qti.qcc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.gms.supervision",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.ssu",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartmirroring",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.authfw",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.ipsgeofence",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.display.cutout.emulation.corner",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.gms",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.soundalive",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.printspooler",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.service.peoplestripe",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.klmsagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.easyMover",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.mainline.telemetry",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.hdmapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.billing",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "vendor.qti.data.txpwradmin",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mdx.kit",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.dofviewer",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.da.daagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.test.LTEfunctionality",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.externalstorage",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.unifiedtp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softapowe.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.kmxservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.server.telecom",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.audio.hearing.visualization.accessibility.scribe",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.hwresourceshare",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.svcagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.gallery3d",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.ai",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.widget.pictureframe",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.camera.sticker.facearavatar.preload",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.imslogger",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.automation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.servicemodeapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.decrease.scan.interval.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.inputshare",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.calllogbackup",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.providers.factory",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.cellbroadcastreceiver",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.diagmonagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.autodoodle.service",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.providers.assisteddialing",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.dreams.basic",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.mms.service",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.camerasdkservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.desktoplauncher",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.imsservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.net.wifi.wifiguider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.sharelive",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.spayfw",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.themestore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.inputdevices",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.incallui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.allshare.service.mediashare",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.mimage.avatarstickers",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.sve",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.vvm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.onetimeinitializer",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.apps.tag",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.InputEventApp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wallpaper.live",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.sdk.handwriting",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.sdhms",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.resources.wifilock",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.documentsui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.networkdiagnostic",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.managedprovisioning",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.launcher",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.advp.imssettings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.biometrics.app.setting",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.aiwallpapers",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.sait.sohservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.ConnectivityUxOverlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.nfc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.gsf",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.knox.securefolder",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.display.cutout.emulation.double",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.epdgtestapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mhs.ai",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.syncadapters.calendar",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.cidmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.cellbroadcastservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.vzw.ecid",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.stk2",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.obdmpermission",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.systemui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.ar.core",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.microsoft.skydrive",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.vzwapiservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mtp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.beaconmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.role.notes.enabled",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.desktopmode.uiservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.appseparation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.mainline.adservices",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.sdk.ocr",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.monotype.android.font.samsungone",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.audiomirroring",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.hotwordenrollment.okgoogle",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.gpuwatchapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.Cdfs",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.soundpicker",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.omcagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.localtransport",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.SMT",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "android",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.cmh",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.app.networkfilter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.volumemonitorprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.clipboardedge",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.aware.service",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.hotwordenrollment.xgoogle",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.CcInfo",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.pacprocessor",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.factory.camera",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.enterprise.knox.cloudmdm.smdms",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.display.cutout.emulation.hole",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.settings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.display.cutout.emulation.tall",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dkey",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "android.autoinstalls.config.samsung",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.zt.framework",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.cameraextensions",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.SecSetupWizard",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.location.nsflp2",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.unifiedsettingservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.telephonyui",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.mpos",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.ts43authservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.carrierconfig",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.scs",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.ext.shared",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.h2e.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.rampart",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.maps",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.offline.languagemodel",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.myfiles",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.provider.filterprovider",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.ve.vebgm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.dressroom",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.as",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.samsungpositioning",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "android.auto_generated_rro_product__",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.internal.systemui.navbar.transparent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.server.wifi.mobilewips",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.emergency",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.LogiaGroup.LogiaDeck",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.smartswitchassistant",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.knox.analytics.uploader",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wallpaper.res",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.intentresolver",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.dqagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.fmm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.microsoft.appmanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.certinstaller",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.aasaservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.safetyassurance",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.restore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qti.snapdragon.qdcm_ff",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.globalpostprocmgr",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.chromecustomizations",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.telephony",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.easysetup",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.stickercenter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.spp.push",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.monotype.android.font.roboto",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.mediasearch",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.aremojieditor",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.settings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.faceservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.phone",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.quicktool",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.as.oss",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.increase.scan.interval.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.monotype.android.font.foundation",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.huxextension",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.vpndialogs",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.visualars",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.gmsconfig.photos",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.tts",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.petservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.qualcomm.overlay.target",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.htmlviewer",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.updatecenter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.vending",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.sdm.config",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.daemonapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.themecenter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.modules.captiveportallogin.forframework",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.apps.turbo",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.aicore",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mobileservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.p2paware.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.usbsettings",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.gmsconfig.gsa",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.service.stplatform",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.vsim.ericssonnsds.webapp",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.verizon.obdm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.userdictionary",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.overlay.gmsconfig.common",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.storyservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.interpreter",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.storagemanager",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.photoremasterservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.settingshelper",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.euicc",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.internal.systemui.navbar.gestural_no_hint",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.game.gos",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.app.qsfastpairoverlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.app.smartcapture",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.skms.android.agent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.ConnectivityOverlay",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.soagent",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.providers.partnerbookmarks",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.sdm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.mdecservice",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.android.dynsystem",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.wifi.softapsixghz.resources",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.providers.media",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.rubin.app",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.kgclient",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.sec.android.mimage.photoretouching",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.google.android.youtube",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.gru",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.samsung.android.scpm",
+    "firstInstallTime": "2021-12-31 18:00:00"
+  },
+  {
+    "package": "com.facebook.katana",
+    "firstInstallTime": "2024-06-12 14:14:23"
+  },
+  {
+    "package": "com.einnovation.temu",
+    "firstInstallTime": "2024-06-13 02:31:07"
+  },
+  {
+    "package": "com.infonow.bofa",
+    "firstInstallTime": "2024-06-13 07:57:57"
+  },
+  {
+    "package": "com.walmart.android",
+    "firstInstallTime": "2024-06-13 14:09:22"
+  },
+  {
+    "package": "com.instagram.android",
+    "firstInstallTime": "2024-06-14 12:56:07"
+  },
+  {
+    "package": "com.google.android.calendar",
+    "firstInstallTime": "2024-06-16 14:17:29"
+  },
+  {
+    "package": "com.google.android.apps.nbu.files",
+    "firstInstallTime": "2024-06-16 14:17:42"
+  },
+  {
+    "package": "com.google.android.apps.docs.editors.docs",
+    "firstInstallTime": "2024-06-16 14:18:47"
+  },
+  {
+    "package": "com.paypal.android.p2pmobile",
+    "firstInstallTime": "2024-06-16 14:20:00"
+  },
+  {
+    "package": "com.teamviewer.quicksupport.market",
+    "firstInstallTime": "2024-06-16 14:22:03"
+  },
+  {
+    "package": "com.teamviewer.teamviewer.market.mobile",
+    "firstInstallTime": "2024-06-16 14:22:09"
+  },
+  {
+    "package": "com.facebook.orca",
+    "firstInstallTime": "2024-06-16 14:23:43"
+  },
+  {
+    "package": "com.wecenergygroup.we",
+    "firstInstallTime": "2024-06-16 14:26:35"
+  },
+  {
+    "package": "com.weather.Weather",
+    "firstInstallTime": "2024-06-16 14:27:06"
+  },
+  {
+    "package": "com.teamviewer.quicksupport.addon.universal",
+    "firstInstallTime": "2024-06-16 14:28:35"
+  },
+  {
+    "package": "com.teamviewer.host.market",
+    "firstInstallTime": "2024-06-16 14:44:15"
+  },
+  {
+    "package": "com.google.android.apps.dynamite",
+    "firstInstallTime": "2024-11-23 07:57:45"
+  },
+  {
+    "package": "com.samsung.android.app.galaxyregistry",
+    "firstInstallTime": "2024-11-26 17:09:34"
+  },
+  {
+    "package": "in.playsimple.wordbingo",
+    "firstInstallTime": "2024-12-06 04:51:08"
+  },
+  {
+    "package": "com.inspiredsquare.jupiter",
+    "firstInstallTime": "2024-12-28 07:49:41"
+  },
+  {
+    "package": "com.google.android.apps.nbu.paisa.user",
+    "firstInstallTime": "2025-02-22 12:58:57"
+  },
+  {
+    "package": "com.karmangames.hearts",
+    "firstInstallTime": "2025-02-22 13:42:46"
+  },
+  {
+    "package": "com.bose.app.android.brussels",
+    "firstInstallTime": "2025-03-06 14:17:38"
+  },
+  {
+    "package": "com.bose.monet",
+    "firstInstallTime": "2025-03-06 14:20:29"
+  },
+  {
+    "package": "org.chromium.webapk.aed6237980b73fc4d_v2",
+    "firstInstallTime": "2025-03-10 16:41:43"
+  },
+  {
+    "package": "com.pbs.video",
+    "firstInstallTime": "2025-05-10 02:16:19"
+  },
+  {
+    "package": "com.google.android.overlay.modules.healthfitness.forframework",
+    "firstInstallTime": "2025-05-11 03:10:55"
+  },
+  {
+    "package": "com.android.phone.auto_generated_characteristics_rro",
+    "firstInstallTime": "2025-05-11 03:10:55"
+  },
+  {
+    "package": "com.samsung.android.internal.overlay.config.default_contextual_search",
+    "firstInstallTime": "2025-05-11 03:10:55"
+  },
+  {
+    "package": "com.android.providers.telephony.auto_generated_characteristics_rro",
+    "firstInstallTime": "2025-05-11 03:10:55"
+  },
+  {
+    "package": "com.android.companiondevicemanager.auto_generated_characteristics_rro",
+    "firstInstallTime": "2025-05-11 03:10:55"
+  },
+  {
+    "package": "com.samsung.android.ese",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.vision.model",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.ssco",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.android.devicediagnostics",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.coldwalletservice",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.knox.sandbox",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.liveeffectservice",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.hwresourceshare.storage",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.app.vex.scanner",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.aicore",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.mfcontents",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.vexfwk.service",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.privateaccesstokens",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.knox.er",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.mydevice",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.nfc.resources.usa",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.knox.kfbp",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.motionphoto.app",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.samsung.android.knox.knnr",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.android.providers.contactkeys",
+    "firstInstallTime": "2025-05-11 03:10:56"
+  },
+  {
+    "package": "com.android.cts.priv.ctsshim",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.ondevicepersonalization.services",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.samsung.android.app.sketchbook",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.sec.android.app.uwbtest",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.federatedcompute",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.sdksandbox",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.cellbroadcastservice",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.healthconnect.controller",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.wifi.resources",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.qualcomm.qti.services.systemhelper",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.ext.services",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.server.deviceconfig.resources",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.providers.media.module",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.cellbroadcastreceiver",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.photopicker",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.virtualmachine.res",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.adservices.api",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.appsearch.apk",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.permissioncontroller",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.health.connect.backuprestore",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.wallpaperbackup",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.safetycenter.resources",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.networkstack.tethering",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.apps.bard",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "vendor.qti.hardware.cacert.server",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.wifi.dialog",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.uwb.resources",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.cts.ctsshim",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.bluetooth",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.android.hotspot2.osulogin",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "com.google.android.connectivity.resources",
+    "firstInstallTime": "2025-05-11 03:10:57"
+  },
+  {
+    "package": "wearos.smart.watch.bt.sync.notifier",
+    "firstInstallTime": "2025-06-06 12:35:48"
+  },
+  {
+    "package": "com.instacart.client",
+    "firstInstallTime": "2025-06-09 04:20:51"
+  },
+  {
+    "package": "com.venmo",
+    "firstInstallTime": "2025-07-11 10:08:26"
+  },
+  {
+    "package": "org.chromium.webapk.a46f07ce09aa4da48_v2",
+    "firstInstallTime": "2025-07-12 14:21:42"
+  },
+  {
+    "package": "com.yelp.android",
+    "firstInstallTime": "2025-07-13 14:34:24"
+  },
+  {
+    "package": "com.totalav.android",
+    "firstInstallTime": "2025-07-22 19:46:52"
+  },
+  {
+    "package": "com.hulu.plus",
+    "firstInstallTime": "2025-07-25 01:53:25"
+  },
+  {
+    "package": "com.youxi.spades",
+    "firstInstallTime": "2025-07-31 10:11:00"
+  },
+  {
+    "package": "com.amazon.kindle",
+    "firstInstallTime": "2025-08-03 13:22:29"
+  },
+  {
+    "package": "com.dd.doordash",
+    "firstInstallTime": "2025-08-08 10:43:51"
+  },
+  {
+    "package": "com.anthropic.claude",
+    "firstInstallTime": "2025-08-09 12:37:10"
+  },
+  {
+    "package": "com.google.android.apps.chromecast.app",
+    "firstInstallTime": "2025-08-09 13:55:28"
+  },
+  {
+    "package": "com.samsung.android.uwb.resources",
+    "firstInstallTime": "2025-10-10 02:42:33"
+  },
+  {
+    "package": "android.auto_generated_rro_vendor__",
+    "firstInstallTime": "2025-10-10 02:42:33"
+  },
+  {
+    "package": "com.samsung.drmboost",
+    "firstInstallTime": "2025-10-10 02:42:33"
+  },
+  {
+    "package": "com.samsung.accessory.budsunitemgr",
+    "firstInstallTime": "2025-10-10 02:42:33"
+  },
+  {
+    "package": "com.samsung.android.nfc",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.android.mocca",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.android.simagent",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.mygalaxy.service",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.sec.android.app.RilPhoneNumberService",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.usbyod",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.android.wifi.resources.lls",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.android.wifi.intelligence",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.samsung.android.secsoundpicker",
+    "firstInstallTime": "2025-10-10 02:42:34"
+  },
+  {
+    "package": "com.android.virtualization.terminal",
+    "firstInstallTime": "2025-10-10 02:42:35"
+  },
+  {
+    "package": "com.android.microdroid.empty_payload",
+    "firstInstallTime": "2025-10-10 02:42:35"
+  },
+  {
+    "package": "com.android.avatarpicker",
+    "firstInstallTime": "2025-10-10 02:42:35"
+  },
+  {
+    "package": "com.android.compos.payload",
+    "firstInstallTime": "2025-10-10 02:42:35"
+  },
+  {
+    "package": "com.google.android.rkpdapp",
+    "firstInstallTime": "2025-10-10 02:42:35"
+  },
+  {
+    "package": "org.chromium.webapk.aa495f2e2a9b7924c_v2",
+    "firstInstallTime": "2025-10-11 19:35:39"
+  },
+  {
+    "package": "me.lyft.android",
+    "firstInstallTime": "2025-10-23 14:25:44"
+  },
+  {
+    "package": "com.google.android.apps.tasks",
+    "firstInstallTime": "2025-10-25 07:30:48"
+  },
+  {
+    "package": "com.spades.solitaire.online.plus.offline.free.card.games",
+    "firstInstallTime": "2025-10-29 20:15:53"
+  },
+  {
+    "package": "org.chromium.webapk.a9f973806bafdb35f_v2",
+    "firstInstallTime": "2025-11-02 11:06:57"
+  },
+  {
+    "package": "com.draco.ladb",
+    "firstInstallTime": "2025-11-12 13:27:10"
+  },
+  {
+    "package": "com.zillow.android.zillowmap",
+    "firstInstallTime": "2025-11-12 13:56:38"
+  },
+  {
+    "package": "com.google.android.contactkeys",
+    "firstInstallTime": "2025-11-12 14:41:06"
+  },
+  {
+    "package": "com.google.android.safetycore",
+    "firstInstallTime": "2025-11-12 14:41:07"
+  }
+]
