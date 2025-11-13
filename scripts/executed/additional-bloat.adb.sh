@@ -24,7 +24,6 @@ pm uninstall --user 0 com.samsung.android.aremojieditor
 pm uninstall --user 0 com.samsung.android.forest
 pm uninstall --user 0 com.samsung.mediasearch
 pm uninstall --user 0 com.samsung.cmh
-pm uninstall --user 0 com.samsung.android.smartmirroring
 pm uninstall --user 0 com.samsung.android.app.interpreter
 
 # Samsung DeX (if not used)

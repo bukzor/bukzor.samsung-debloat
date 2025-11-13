@@ -1,200 +1,192 @@
 #!/bin/bash
 # Master Samsung Debloat Script
-# Consolidated from all phases - run sequentially
-# WARNING: Review each section before running!
+# Orchestrates individual phase scripts for clean execution
+# Each phase can be run independently or skipped as needed
+
+set -e  # Exit on error
 
 DEVICE="$1"
-if [ -z "$DEVICE" ]; then
-    echo "Usage: $0 <device-ip:port>"
-    echo "Example: $0 192.168.87.245:44577"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Color output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+usage() {
+    cat <<EOF
+Usage: $0 <device-ip:port> [options]
+
+Arguments:
+  device-ip:port    ADB device identifier (e.g., 192.168.87.245:44577)
+
+Options:
+  --skip-phase N    Skip phase N (can be specified multiple times)
+  --only-phase N    Run only phase N
+  --dry-run         Show what would be executed without running
+  --help            Show this help message
+
+Phases:
+  1. Initial debloat (15 packages: Bixby, Samsung Daily, AR Zone, etc.)
+  2. Additional bloat (25 packages: Verizon, Microsoft, Samsung services)
+  3. Aggressive Samsung (21 packages: Smart features, Game services, Pay)
+  4. Disable duplicates (7 apps: Dialer, Contacts, Gallery, etc.)
+  5. UI overlays (5 packages: Theme, personalization, lock screen)
+  6. Behavior overrides (16 packages: Settings helpers, usage tracking)
+  7. Grant permissions (10 Google apps)
+
+Examples:
+  $0 192.168.87.245:44577
+  $0 192.168.87.245:44577 --skip-phase 4
+  $0 192.168.87.245:44577 --only-phase 1 --dry-run
+
+EOF
     exit 1
+}
+
+log() {
+    echo -e "${GREEN}[$(date +'%H:%M:%S')]${NC} $1"
+}
+
+warn() {
+    echo -e "${YELLOW}[WARN]${NC} $1"
+}
+
+error() {
+    echo -e "${RED}[ERROR]${NC} $1"
+    exit 1
+}
+
+run_phase() {
+    local phase_num=$1
+    local phase_name=$2
+    local script_name=$3
+    local description=$4
+
+    # Check if phase should be skipped
+    for skip in "${SKIP_PHASES[@]}"; do
+        if [ "$skip" == "$phase_num" ]; then
+            warn "Skipping Phase $phase_num: $phase_name"
+            return 0
+        fi
+    done
+
+    # Check if running only specific phase
+    if [ ${#ONLY_PHASES[@]} -gt 0 ]; then
+        local run_this=false
+        for only in "${ONLY_PHASES[@]}"; do
+            [ "$only" == "$phase_num" ] && run_this=true
+        done
+        [ "$run_this" == false ] && return 0
+    fi
+
+    echo ""
+    log "===== Phase $phase_num: $phase_name ====="
+    log "$description"
+
+    local script_path="$SCRIPT_DIR/executed/$script_name"
+
+    if [ ! -f "$script_path" ]; then
+        error "Script not found: $script_path"
+    fi
+
+    if [ "$DRY_RUN" == true ]; then
+        warn "DRY RUN: Would execute $script_name"
+        return 0
+    fi
+
+    adb -s "$DEVICE" shell < "$script_path"
+    local exit_code=$?
+
+    if [ $exit_code -eq 0 ]; then
+        log "Phase $phase_num completed successfully"
+    else
+        warn "Phase $phase_num completed with some failures (exit code: $exit_code)"
+    fi
+}
+
+# Parse arguments
+SKIP_PHASES=()
+ONLY_PHASES=()
+DRY_RUN=false
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --skip-phase)
+            SKIP_PHASES+=("$2")
+            shift 2
+            ;;
+        --only-phase)
+            ONLY_PHASES+=("$2")
+            shift 2
+            ;;
+        --dry-run)
+            DRY_RUN=true
+            shift
+            ;;
+        --help)
+            usage
+            ;;
+        *)
+            if [ -z "$DEVICE" ]; then
+                DEVICE="$1"
+                shift
+            else
+                error "Unknown argument: $1"
+            fi
+            ;;
+    esac
+done
+
+# Validate device argument
+if [ -z "$DEVICE" ]; then
+    error "Device IP:port required"
+    usage
 fi
 
-ADB="adb -s $DEVICE shell"
+# Verify ADB connection
+log "Verifying connection to $DEVICE..."
+if ! adb -s "$DEVICE" get-state >/dev/null 2>&1; then
+    error "Cannot connect to device $DEVICE. Is wireless ADB enabled?"
+fi
 
-echo "===== Phase 1: Initial Debloat ====="
-echo "Removing Bixby, Samsung Daily, AR Zone, Samsung apps..."
-$ADB <<'EOF'
-pm uninstall --user 0 com.samsung.android.bixby.agent
-pm uninstall --user 0 com.samsung.android.bixby.service
-pm uninstall --user 0 com.samsung.android.app.settings.bixby
-pm uninstall --user 0 com.samsung.android.visionintelligence
-pm uninstall --user 0 com.samsung.android.app.spage
-pm uninstall --user 0 com.samsung.android.app.tips
-pm uninstall --user 0 com.samsung.android.arzone
-pm uninstall --user 0 com.samsung.android.aremoji
-pm uninstall --user 0 com.samsung.android.aremeji.editor
-pm uninstall --user 0 com.samsung.android.ardrawing
-pm uninstall --user 0 com.samsung.android.game.gamehome
-pm uninstall --user 0 com.samsung.android.game.gametools
-pm uninstall --user 0 com.samsung.android.scloud
-pm uninstall --user 0 com.samsung.android.samsungpass
-pm uninstall --user 0 com.samsung.android.samsungpassautofill
-pm uninstall --user 0 com.sec.android.app.sbrowser
-pm uninstall --user 0 com.samsung.android.email.provider
-pm uninstall --user 0 com.samsung.android.calendar
-pm uninstall --user 0 com.wsomacp
-pm uninstall --user 0 com.samsung.android.app.notes
-pm uninstall --user 0 com.samsung.android.app.voice
-pm uninstall --user 0 com.sec.android.app.popupcalculator
-pm uninstall --user 0 com.android.chrome
-pm disable-user --user 0 com.sec.android.app.launcher
-EOF
+log "Connected to $DEVICE"
+log "Starting debloat process..."
 
+# Run phases
+run_phase 1 "Initial Debloat" "debloat.adb.sh" \
+    "Removing Bixby, Samsung Daily, AR Zone, Samsung apps..."
+
+run_phase 2 "Additional Bloat" "additional-bloat.adb.sh" \
+    "Removing Verizon, Microsoft, Samsung themes and services..."
+
+run_phase 3 "Aggressive Samsung Debloat" "aggressive-samsung-debloat.adb.sh" \
+    "Removing Smart features, Game services, behavior overrides..."
+
+run_phase 4 "Disable Samsung Duplicates" "disable-samsung-duplicates.adb.sh" \
+    "Disabling deeply-integrated Samsung apps (Dialer, Contacts, Gallery)..."
+
+run_phase 5 "UI Overlays" "remove-samsung-ui-overlays.adb.sh" \
+    "Removing UI customizations and theme components..."
+
+run_phase 6 "Behavior Overrides" "remove-behavior-overrides.adb.sh" \
+    "Removing settings helpers, usage tracking, behavior modifications..."
+
+run_phase 7 "Grant Permissions" "grant-app-permissions.adb.sh" \
+    "Granting essential permissions to Google apps..."
+
+# Summary
 echo ""
-echo "===== Phase 2: Additional Bloat ====="
-echo "Removing Verizon, Microsoft, Samsung services..."
-$ADB <<'EOF'
-pm uninstall --user 0 com.verizon.obdm
-pm uninstall --user 0 com.vzw.ecid
-pm uninstall --user 0 com.vzw.hss.myverizon
-pm uninstall --user 0 com.vcast.mediamanager
-pm uninstall --user 0 com.samsung.vvm
-pm uninstall --user 0 com.samsung.vzwapiservice
-pm uninstall --user 0 com.verizon.onetalk.dialer
-pm uninstall --user 0 com.securityandprivacy.android.verizon.vms
-pm uninstall --user 0 com.microsoft.appmanager
-pm uninstall --user 0 com.microsoft.skydrive
-pm uninstall --user 0 com.samsung.android.themecenter
-pm uninstall --user 0 com.samsung.android.themestore
-pm uninstall --user 0 com.samsung.storyservice
-pm uninstall --user 0 com.samsung.android.app.dressroom
-pm uninstall --user 0 com.samsung.android.stickercenter
-pm uninstall --user 0 com.samsung.android.aremojieditor
-pm uninstall --user 0 com.samsung.android.forest
-pm uninstall --user 0 com.samsung.mediasearch
-pm uninstall --user 0 com.samsung.cmh
-pm uninstall --user 0 com.samsung.android.smartmirroring
-pm uninstall --user 0 com.samsung.android.app.interpreter
-pm uninstall --user 0 com.samsung.android.mdx
-pm uninstall --user 0 com.samsung.android.mdx.kit
-pm uninstall --user 0 com.hiya.star
-pm uninstall --user 0 com.totalav.android
-pm uninstall --user 0 org.chromium.webapk.a46f07ce09aa4da48_v2
-pm uninstall --user 0 org.chromium.webapk.a9f973806bafdb35f_v2
-pm uninstall --user 0 org.chromium.webapk.aa495f2e2a9b7924c_v2
-pm uninstall --user 0 org.chromium.webapk.aed6237980b73fc4d_v2
-EOF
-
+log "===== Debloat Complete! ====="
 echo ""
-echo "===== Phase 3: Aggressive Samsung Debloat ====="
-echo "Removing behavior overrides (Smart features, Game services, etc.)..."
-$ADB <<'EOF'
-pm uninstall --user 0 com.samsung.android.smartcallprovider
-pm uninstall --user 0 com.samsung.android.smartface
-pm uninstall --user 0 com.samsung.android.smartface.overlay
-pm uninstall --user 0 com.samsung.android.smartsuggestions
-pm uninstall --user 0 com.samsung.android.smartswitchassistant
-pm uninstall --user 0 com.samsung.android.smartmirroring
-pm uninstall --user 0 com.samsung.android.game.gos
-pm uninstall --user 0 com.samsung.gamedriver.sm8650
-pm uninstall --user 0 com.samsung.android.spayfw
-pm uninstall --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
-pm uninstall --user 0 com.samsung.android.visualars
-pm uninstall --user 0 com.samsung.android.aremojieditor
-pm uninstall --user 0 com.sec.android.mimage.avatarstickers
-pm uninstall --user 0 com.samsung.android.allshare.service.mediashare
-pm uninstall --user 0 com.samsung.android.app.parentalcare
-pm uninstall --user 0 com.sec.android.app.SecSetupWizard
-pm uninstall --user 0 com.sec.android.app.setupwizard
-pm uninstall --user 0 com.sec.android.app.setupwizardlegalprovider
-pm uninstall --user 0 com.google.android.setupwizard
-pm uninstall --user 0 com.samsung.carrier.logcollector
-pm uninstall --user 0 com.samsung.android.honeyboard
-pm uninstall --user 0 com.samsung.android.app.clipboardedge
-pm uninstall --user 0 com.samsung.android.app.sharelive
-pm uninstall --user 0 com.samsung.android.inputshare
-pm uninstall --user 0 com.samsung.android.appseparation
-EOF
-
-echo ""
-echo "===== Phase 4: Disable Samsung Duplicates ====="
-echo "Disabling (not uninstalling) deeply-integrated Samsung apps..."
-$ADB <<'EOF'
-pm disable-user --user 0 com.samsung.android.dialer
-pm disable-user --user 0 com.samsung.android.app.contacts
-pm disable-user --user 0 com.sec.android.gallery3d
-pm disable-user --user 0 com.sec.android.app.soundalive
-pm disable-user --user 0 com.sec.android.app.myfiles
-pm disable-user --user 0 com.samsung.app.newtrim
-pm disable-user --user 0 com.samsung.android.app.routines
-EOF
-
-echo ""
-echo "===== Phase 5: UI Overlays & Behavior Overrides ====="
-echo "Removing UI customizations and behavior modifications..."
-$ADB <<'EOF'
-pm uninstall --user 0 com.samsung.android.themecenter
-pm uninstall --user 0 com.sec.android.app.personalization
-pm uninstall --user 0 com.sec.android.app.qsfastpairoverlay
-pm uninstall --user 0 com.samsung.android.dynamiclock
-pm uninstall --user 0 com.samsung.android.wallpaper.live
-pm uninstall --user 0 com.samsung.internal.systemui.navbar.gestural_no_hint
-pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural
-pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
-pm uninstall --user 0 com.samsung.android.ConnectivityOverlay
-pm uninstall --user 0 com.samsung.android.ConnectivityUxOverlay
-pm uninstall --user 0 com.samsung.android.settingshelper
-pm uninstall --user 0 com.samsung.unifiedsettingservice
-pm uninstall --user 0 com.samsung.android.inputshare
-pm uninstall --user 0 com.samsung.android.aware.service
-pm uninstall --user 0 com.samsung.android.setting.multisound
-pm uninstall --user 0 com.samsung.android.app.soundpicker
-pm uninstall --user 0 com.samsung.android.secsoundpicker
-pm uninstall --user 0 com.samsung.android.app.taskedge
-pm uninstall --user 0 com.samsung.android.app.routines
-pm uninstall --user 0 com.samsung.android.internal.overlay.config.default_contextual_search
-pm uninstall --user 0 com.sec.android.app.qsfastpairoverlay
-pm uninstall --user 0 com.samsung.android.svcagent
-pm uninstall --user 0 com.samsung.android.app.omcagent
-pm uninstall --user 0 com.samsung.android.lool
-pm uninstall --user 0 com.samsung.android.privacydashboard
-EOF
-
-echo ""
-echo "===== Phase 6: Grant App Permissions ====="
-echo "Granting essential permissions to Google apps..."
-$ADB <<'EOF'
-pm grant com.google.android.dialer android.permission.READ_CONTACTS
-pm grant com.google.android.dialer android.permission.WRITE_CONTACTS
-pm grant com.google.android.dialer android.permission.READ_CALL_LOG
-pm grant com.google.android.dialer android.permission.WRITE_CALL_LOG
-pm grant com.google.android.dialer android.permission.CALL_PHONE
-pm grant com.google.android.dialer android.permission.READ_PHONE_STATE
-pm grant com.google.android.dialer android.permission.CAMERA
-pm grant com.google.android.contacts android.permission.READ_CONTACTS
-pm grant com.google.android.contacts android.permission.WRITE_CONTACTS
-pm grant com.google.android.contacts android.permission.GET_ACCOUNTS
-pm grant com.google.android.apps.messaging android.permission.READ_SMS
-pm grant com.google.android.apps.messaging android.permission.SEND_SMS
-pm grant com.google.android.apps.messaging android.permission.RECEIVE_SMS
-pm grant com.google.android.apps.messaging android.permission.READ_CONTACTS
-pm grant com.google.android.apps.messaging android.permission.CAMERA
-pm grant com.google.android.apps.photos android.permission.READ_MEDIA_IMAGES
-pm grant com.google.android.apps.photos android.permission.READ_MEDIA_VIDEO
-pm grant com.google.android.apps.photos android.permission.ACCESS_MEDIA_LOCATION
-pm grant com.google.android.apps.photos android.permission.CAMERA
-pm grant com.google.android.apps.nbu.files android.permission.READ_EXTERNAL_STORAGE
-pm grant com.google.android.apps.nbu.files android.permission.WRITE_EXTERNAL_STORAGE
-pm grant com.google.android.calendar android.permission.READ_CALENDAR
-pm grant com.google.android.calendar android.permission.WRITE_CALENDAR
-pm grant com.google.android.calendar android.permission.READ_CONTACTS
-pm grant com.google.android.gm android.permission.GET_ACCOUNTS
-pm grant com.google.android.gm android.permission.READ_CONTACTS
-pm grant com.android.chrome android.permission.ACCESS_FINE_LOCATION
-pm grant com.android.chrome android.permission.CAMERA
-pm grant com.google.android.keep android.permission.RECORD_AUDIO
-pm grant com.google.android.keep android.permission.CAMERA
-pm grant com.google.android.deskclock android.permission.RECORD_AUDIO
-EOF
-
-echo ""
-echo "===== Complete! ====="
-echo "Total packages removed: ~87"
-echo "Total packages disabled: ~8"
+echo "Packages removed: ~87"
+echo "Packages disabled: ~8"
 echo ""
 echo "Next steps:"
 echo "1. Install Google apps from Play Store (see README.md)"
 echo "2. Set defaults: Gboard, Lawnchair, Google Phone, Google Messages"
 echo "3. Star family contacts in Google Contacts"
 echo "4. Configure Do Not Disturb priority notifications"
+echo ""
+log "See README.md for complete setup instructions"

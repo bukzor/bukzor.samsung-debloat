@@ -8,7 +8,7 @@ pm uninstall --user 0 com.samsung.android.themecenter
 # Samsung personalization service
 pm uninstall --user 0 com.sec.android.app.personalization
 
-# Samsung quick settings overlay
+# Samsung quick settings overlay (fast pair)
 pm uninstall --user 0 com.sec.android.app.qsfastpairoverlay
 
 # Samsung dynamic lock screen

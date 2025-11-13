@@ -40,13 +40,35 @@ Transform a Samsung phone into a near-Pixel experience by removing bloatware and
 
 ### Run Debloat Script
 
-```bash
-# Review the script first!
-cat scripts/master-debloat.adb.sh
+The master script orchestrates 7 individual phase scripts for clean, modular execution:
 
-# Execute (replace with your device IP:port)
+```bash
+# Run all phases
 ./scripts/master-debloat.adb.sh 192.168.87.245:44577
+
+# See what would be executed (dry run)
+./scripts/master-debloat.adb.sh 192.168.87.245:44577 --dry-run
+
+# Skip Phase 4 (if you want to keep Samsung duplicates temporarily)
+./scripts/master-debloat.adb.sh 192.168.87.245:44577 --skip-phase 4
+
+# Run only Phase 1 (initial debloat)
+./scripts/master-debloat.adb.sh 192.168.87.245:44577 --only-phase 1
+
+# View all options
+./scripts/master-debloat.adb.sh --help
 ```
+
+**Phases:**
+1. Initial debloat (15 packages)
+2. Additional bloat (25 packages)
+3. Aggressive Samsung (21 packages)
+4. Disable duplicates (7 apps)
+5. UI overlays (5 packages)
+6. Behavior overrides (16 packages)
+7. Grant permissions (10 apps)
+
+Individual phase scripts are in `scripts/executed/` and can be run independently if needed.
 
 ### Install Google Apps
 

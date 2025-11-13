@@ -40,5 +40,4 @@ pm uninstall --user 0 com.samsung.android.honeyboard
 # Other Samsung behavior overrides
 pm uninstall --user 0 com.samsung.android.app.clipboardedge
 pm uninstall --user 0 com.samsung.android.app.sharelive
-pm uninstall --user 0 com.samsung.android.inputshare
 pm uninstall --user 0 com.samsung.android.appseparation

@@ -16,9 +16,6 @@ pm uninstall --user 0 com.samsung.android.settingshelper
 # Samsung unified setting service (behavior customization)
 pm uninstall --user 0 com.samsung.unifiedsettingservice
 
-# Samsung input share (clipboard/input override)
-pm uninstall --user 0 com.samsung.android.inputshare
-
 # Samsung aware service (usage pattern tracking/behavior modification)
 pm uninstall --user 0 com.samsung.android.aware.service
 
@@ -32,14 +29,8 @@ pm uninstall --user 0 com.samsung.android.secsoundpicker
 # Samsung edge panels/features (UI overlay)
 pm uninstall --user 0 com.samsung.android.app.taskedge
 
-# Samsung routine automation (behavior automation)
-pm uninstall --user 0 com.samsung.android.app.routines
-
 # Samsung contextual search overlay
 pm uninstall --user 0 com.samsung.android.internal.overlay.config.default_contextual_search
-
-# Samsung quick settings overlay
-pm uninstall --user 0 com.sec.android.app.qsfastpairoverlay
 
 # Samsung service agent (background behavior modifier)
 pm uninstall --user 0 com.samsung.android.svcagent
