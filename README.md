@@ -1,6 +1,8 @@
-# Samsung Phone Debloat - Pixel Experience Transformation
+# Buck's Samsung Android Debloating
 
 Transform a Samsung phone into a near-Pixel experience by removing bloatware and replacing Samsung apps with Google equivalents, all without root access.
+
+> **⚠️ Status:** This is "works for me" software. I've successfully used these scripts on my Samsung device, but your mileage may vary. Always review scripts before running and maintain backups. Test on your specific device at your own risk.
 
 ## What This Does
 
