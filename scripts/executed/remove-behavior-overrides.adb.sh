@@ -16,6 +16,9 @@ pm uninstall --user 0 com.samsung.android.settingshelper
 # Samsung unified setting service (behavior customization)
 pm uninstall --user 0 com.samsung.unifiedsettingservice
 
+# Samsung input share (clipboard/input override)
+pm uninstall --user 0 com.samsung.android.inputshare
+
 # Samsung aware service (usage pattern tracking/behavior modification)
 pm uninstall --user 0 com.samsung.android.aware.service
 

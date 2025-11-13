@@ -28,13 +28,13 @@ Options:
   --help            Show this help message
 
 Phases:
-  1. Initial debloat (15 packages: Bixby, Samsung Daily, AR Zone, etc.)
-  2. Additional bloat (25 packages: Verizon, Microsoft, Samsung services)
-  3. Aggressive Samsung (21 packages: Smart features, Game services, Pay)
+  1. Initial debloat (37 packages: Bixby, Samsung Daily, AR Zone, etc.)
+  2. Additional bloat (28 packages: Verizon, Microsoft, Samsung services)
+  3. Aggressive Samsung (24 packages: Smart features, Game services, Pay)
   4. Disable duplicates (7 apps: Dialer, Contacts, Gallery, etc.)
   5. UI overlays (5 packages: Theme, personalization, lock screen)
-  6. Behavior overrides (16 packages: Settings helpers, usage tracking)
-  7. Grant permissions (10 Google apps)
+  6. Behavior overrides (18 packages: Settings helpers, usage tracking)
+  7. Grant permissions (31 permissions for 10 Google apps)
 
 Examples:
   $0 192.168.87.245:44577

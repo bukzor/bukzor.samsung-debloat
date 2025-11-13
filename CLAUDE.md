@@ -1,6 +1,8 @@
-# Samsung Debloat Project
+# Buck's Samsung Android Debloating
 
 Transform Samsung phones into Pixel-like experience by removing bloatware via ADB without root.
+
+**Status:** "Works for me" personal tool. Use at your own risk.
 
 ## Project Context
 
