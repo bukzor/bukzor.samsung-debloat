@@ -36,6 +36,7 @@ This is a completed debloat session documented in `docs/devlog/2025-11-12.md`. T
 ## Device Connection
 
 Wireless ADB via:
+
 ```bash
 adb pair <ip>:<pairing-port> <pairing-code>
 adb connect <ip>:<connection-port>
@@ -45,22 +46,23 @@ After reboot, requires fresh pairing with new ports.
 
 ## App Replacements
 
-| Samsung | Google | Status |
-|---------|--------|--------|
-| Samsung Keyboard | Gboard | Uninstalled |
-| One UI Home | Lawnchair | Disabled |
-| Samsung Dialer | Google Phone | Disabled |
-| Samsung Contacts | Google Contacts | Disabled |
-| Samsung Gallery | Google Photos | Disabled |
-| Samsung Files | Files by Google | Disabled |
-| Samsung Internet | Chrome | Uninstalled |
-| Samsung Notes | Google Keep | Uninstalled |
-| Samsung Calculator | Google Calculator | Uninstalled |
+| Samsung                | Google                     | Status      |
+| ---------------------- | -------------------------- | ----------- |
+| Samsung Keyboard       | Gboard                     | Uninstalled |
+| One UI Home            | Lawnchair                  | Disabled    |
+| Samsung Dialer         | Google Phone               | Disabled    |
+| Samsung Contacts       | Google Contacts            | Disabled    |
+| Samsung Gallery        | Google Photos              | Disabled    |
+| Samsung Files          | Files by Google            | Disabled    |
+| Samsung Internet       | Chrome                     | Uninstalled |
+| Samsung Notes          | Google Keep                | Uninstalled |
+| Samsung Calculator     | Google Calculator          | Uninstalled |
 | Samsung Voice Recorder | Voice Recorder (3rd party) | Uninstalled |
 
 ## Limitations
 
 Without root/custom ROM, cannot change:
+
 - Core SystemUI appearance (quick settings, notification shade)
 - Status bar design
 - System UI framework
@@ -69,6 +71,7 @@ Without root/custom ROM, cannot change:
 ## Future Tasks
 
 If resuming work on this project:
+
 - Test debloat script on fresh Samsung device
 - Explore GCam ports for specific Samsung models
 - Document custom ROM options (LineageOS, GrapheneOS)
@@ -118,6 +121,7 @@ adb shell am start -a android.intent.action.VIEW -d 'market://details?id=<packag
 - **Phases completed:** 6
 
 Phase breakdown:
+
 1. Initial debloat (15 packages)
 2. Additional bloat (28 packages)
 3. Aggressive Samsung debloat (22 packages)
