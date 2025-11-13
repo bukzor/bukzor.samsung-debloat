@@ -247,6 +247,10 @@ adb shell cmd role get-role-holders android.app.role.SMS
 - [ADB Commands Reference](https://developer.android.com/tools/adb)
 - [Lawnchair Launcher](https://lawnchair.app/)
 
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) file for details.
+
 ## Credits
 
 Session documented in `docs/devlog/2025-11-12.md` - complete step-by-step process, commands, and analysis.
