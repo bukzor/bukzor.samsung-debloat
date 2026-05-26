@@ -208,7 +208,7 @@ You likely already have: Messages, Photos, Calendar, Gmail, Files by Google
 │   └── reference/                      # Unused reference scripts
 ├── docs/
 │   └── devlog/
-│       └── 2025-11-12.md              # Complete session documentation
+│       └── 2025-11-12-000-initial-debloat.md  # Complete session documentation
 ├── packages-install-dates.json         # Package analysis data
 └── current-packages.txt                # Final package list
 ```
@@ -269,6 +269,6 @@ Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) file for 
 
 ## Credits
 
-Session documented in `docs/devlog/2025-11-12.md` - complete step-by-step process, commands, and analysis.
+Session documented in `docs/devlog/2025-11-12-000-initial-debloat.md` - complete step-by-step process, commands, and analysis.
 
 🤖 Created with [Claude Code](https://claude.com/claude-code)

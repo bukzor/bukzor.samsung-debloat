@@ -6,7 +6,7 @@ Transform Samsung phones into Pixel-like experience by removing bloatware via AD
 
 ## Project Context
 
-This is a completed debloat session documented in `docs/devlog/2025-11-12.md`. The phone was successfully transformed with ~87 packages removed, ~8 disabled, and complete Google app suite installed.
+This is a completed debloat session documented in `docs/devlog/2025-11-12-000-initial-debloat.md`. The phone was successfully transformed with ~87 packages removed, ~8 disabled, and complete Google app suite installed.
 
 ## Key Files
 
@@ -15,7 +15,7 @@ This is a completed debloat session documented in `docs/devlog/2025-11-12.md`. T
 - `packages-install-dates.json` - Complete package analysis with install date clustering
 - `current-packages.txt` - Final state after debloat
 - `README.md` - User-facing documentation
-- `docs/devlog/2025-11-12.md` - Complete session documentation
+- `docs/devlog/2025-11-12-000-initial-debloat.md` - Complete session documentation
 
 ## Approach
 
