@@ -7,8 +7,9 @@ there is no rogue SMS interceptor (`../findings.kb/no-rogue-sms-interceptor.md`)
 and the active malware is already gone. Social engineering / phishing is now
 the leading explanation.
 
-Still to rule out the technical channel: identify the dropper APK
-(`dropper-apk-identity.md`) in case it is an info-stealer; recover the
-removed-apps list (`removed-apps-list.md`); and review account-side Google Play
-**purchase + subscription** history and Google **Security Checkup** (unknown
-devices/sessions).
+Still to rule out the technical channel: the dropper is now identified as the
+Tencent 应用宝 app store (`../findings.kb/dropper-is-tencent-app-store.md`) — a
+silent-install/ad gateway, not itself a card-stealer, but it could have
+installed one. So recover the removed-apps list (`removed-apps-list.md`) to find
+patient zero, and review account-side Google Play **purchase + subscription**
+history and Google **Security Checkup** (unknown devices/sessions).

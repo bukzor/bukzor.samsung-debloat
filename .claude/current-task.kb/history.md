@@ -18,8 +18,10 @@ testimony, not yet independently verified.
 - The popups **stopped somewhere between uninstall #20 and #30** — so the
   active culprit is very likely *already removed*, but **which uninstall did
   it is unknown**.
-- The phone has since been **rebooted** → logcat from the infection is gone;
-  rely on persistent artifacts.
+- A reboot was initially assumed — but the user doubted it and **logcat in
+  fact retains entries back to 2026-05-21** (see
+  `findings.kb/logcat-reaches-back-to-0521.md`). So logcat IS usable for the
+  infection-active window; don't treat it as gone.
 
 ## Card fraud
 
