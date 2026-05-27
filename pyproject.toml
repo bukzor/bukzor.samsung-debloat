@@ -1,0 +1,3 @@
+[tool.pytest.ini_options]
+python_classes = ["Describe*", "When*", "Test*"]
+python_functions = ["it_*", "test_*"]

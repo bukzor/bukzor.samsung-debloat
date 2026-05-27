@@ -2,3 +2,7 @@
 # Personal forensic dumps from debloat sessions (not for publication)
 forensics/
 trash/
+
+# Python
+__pycache__/
+*.pyc
