@@ -14,9 +14,16 @@ Rule: the moment analysis stops being a trivial one-liner (parsing
 committed, tested script** — Python preferred for parsing. Inline bash is for
 one safe command, not data processing.
 
-**Pending (requested by the user):** a reusable forensic-report script under
-`scripts/` that ingests a `forensics/<capture>/` dir and emits: logcat coverage
-+ package install/remove events + crashes by package; usagestats removed-app
-candidates (used-but-not-installed) with last-seen; suspicious-name/permission
-flags; Downloads anomalies. Build this **first** next session, then use it to
-finish the patient-zero hunt. Follow `~/.claude/must-read.kb/before/writing-python-code.md`.
+**Built:** `scripts/forensic_report.py` (+ `forensic_report_test.py`, and a root
+`pyproject.toml` enabling the `Describe`/`it_` pytest convention). Pure parsers,
+I/O only in `main()`, 23 tests green. It ingests a `forensics/<capture>/` dir and
+reports: logcat buffer coverage, crashes-by-package, package install/remove
+events (none present — buffers too shallow), usagestats removed-app candidates,
+name-heuristic flags, third-party appop holders, and Download anomalies.
+
+Rule going forward: each new **analysis** that parses a capture
+(`../forensic-analyses.kb/`) gets its own tested parser in
+`scripts/forensic_report.py`, never inline bash. Run the report:
+`python3 scripts/forensic_report.py forensics/<capture>`. Run tests:
+`uv run --no-project --with pytest pytest scripts/`. Follow
+`~/.claude/must-read.kb/before/writing-python-code.md`.

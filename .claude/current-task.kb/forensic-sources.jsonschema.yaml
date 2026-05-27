@@ -1,0 +1,34 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Forensic-source frontmatter
+description: |
+  Frontmatter for items in forensic-sources.kb/ and its nested sub-collections.
+  Each item is ONE on-device data source: what it is, how to capture it to local
+  disk, and the state of any local capture. Analytical judgments about a source
+  belong on the analyses that consume it (forensic-analyses.kb/), not here.
+
+type: object
+required: [capture-status, needs-device, last-updated]
+
+properties:
+  capture-status:
+    oneOf:
+      - const: captured
+        description: Fully captured in a local forensics/<capture>/ dir.
+      - const: partial
+        description: Partially captured (only some of the source grabbed).
+      - const: not-captured
+        description: Exists on the device but not yet captured.
+      - const: unavailable
+        description: Not capturable without root, or not present on this device.
+  captured-as:
+    type: array
+    items: {type: string}
+    description: Capture filename(s) under forensics/<capture>/ when captured.
+  needs-device:
+    type: boolean
+    description: true = (re)capture requires a live ADB connection.
+  last-updated:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}$'
+
+additionalProperties: false

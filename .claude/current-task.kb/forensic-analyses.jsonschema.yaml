@@ -1,0 +1,43 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Forensic-analysis frontmatter
+description: |
+  Frontmatter for items in forensic-analyses.kb/ and its nested sub-collections.
+  Each item is ONE analysis to run over captured data: its method, the source(s)
+  it consumes, the question/thread it bears on, and execution status. The
+  analytical judgments (confidence, reaches-window, survives-uninstall) live
+  here, not on the raw sources.
+
+type: object
+required: [status, consumes, last-updated]
+
+properties:
+  status:
+    oneOf:
+      - const: todo
+      - const: in-progress
+      - const: blocked
+        description: Waiting on a not-yet-captured source (see consumes).
+      - const: done
+        description: Completed; result recorded as a finding.
+  consumes:
+    type: array
+    items: {type: string}
+    description: forensic-source id(s) this analysis needs.
+  answers:
+    type: array
+    items: {type: string}
+    description: Question/thread(s) it bears on (e.g. patient-zero, card-fraud).
+  confidence:
+    oneOf: [{const: high}, {const: medium}, {const: low}]
+    description: Likelihood the analysis yields its answer.
+  reaches-window:
+    oneOf: [{const: "yes"}, {const: "no"}, {const: "unknown"}]
+    description: Does the consumed data reach the 05-18→05-25 infection window?
+  survives-uninstall:
+    oneOf: [{const: "yes"}, {const: "no"}, {const: "unknown"}]
+    description: Can it name an app after that app was uninstalled?
+  last-updated:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}$'
+
+additionalProperties: false

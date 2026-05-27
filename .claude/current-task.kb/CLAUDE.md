@@ -19,9 +19,13 @@ masquerade as permanent project documentation.
 
 - `findings.kb/` — evidence-backed forensic findings, one per file, schema'd by
   `findings.jsonschema.yaml`.
+- `forensic-sources.kb/` — inventory of on-device data sources + capture state,
+  in domain sub-collections; schema'd by `forensic-sources.jsonschema.yaml`.
+- `forensic-analyses.kb/` — analysis backlog over that data (method, consumed
+  sources, status), in sub-collections; schema'd by `forensic-analyses.jsonschema.yaml`.
 - `environment.kb/` — operational facts/gotchas for working this task (how to
   connect, toolchain quirks, data-handling, method caveats).
-- `open-question.kb/` — currently-open known-unknowns, one per file; remove a
+- `open-questions.kb/` — currently-open known-unknowns, one per file; remove a
   file when its question is answered and write the answer into `findings.kb/`.
 
 Single-topic root `.md` files (mission, device, history) hold context that

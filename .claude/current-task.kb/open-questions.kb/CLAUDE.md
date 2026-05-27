@@ -1,4 +1,4 @@
-# open-question.kb — maintenance guide
+# open-questions.kb — maintenance guide
 
 One file per **currently-open known-unknown** for this investigation. Presence
 in this directory means "still open"; there is no status field.

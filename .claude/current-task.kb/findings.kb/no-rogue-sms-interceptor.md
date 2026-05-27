@@ -22,4 +22,4 @@ Evidence (capture `20260526-182045-SM-S926U/`):
 Confidence is **medium**, not high: this is *current* state after the user's
 uninstall spree — an interceptor could have been among the removed apps. The
 account-side Play Library review
-(`../open-question.kb/removed-apps-list.md`) may still reveal one.
+(`../open-questions.kb/removed-apps-list.md`) may still reveal one.

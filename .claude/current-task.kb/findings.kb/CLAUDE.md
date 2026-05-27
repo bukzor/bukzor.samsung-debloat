@@ -9,7 +9,7 @@ service is active", "this APK is a dropper". Each carries frontmatter
 `../findings.jsonschema.yaml`.
 
 Does NOT belong here: open questions with no evidence yet
-(→ `../open-questions.md`), operational gotchas about tooling
+(→ `../open-questions.kb`), operational gotchas about tooling
 (→ `../environment.kb/`), or the task plan (→ `../mission.md`).
 
 Always cite the artifact the finding rests on, by capture name under

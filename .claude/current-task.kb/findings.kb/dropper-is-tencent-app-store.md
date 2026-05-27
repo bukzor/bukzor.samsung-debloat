@@ -30,7 +30,7 @@ Why it explains every symptom — it declares and requests the full abuse kit:
 **Likely a secondary payload, not patient zero.** The `_.admaster/` ad-tracking
 residue (2026-05-18) predates this APK (filename 2026-05-19), so an ad component
 was already active and probably fetched 应用宝. The initial vector is most
-likely one of the ~30 removed apps — see `../open-question.kb/removed-apps-list.md`.
+likely one of the ~30 removed apps — see `../open-questions.kb/removed-apps-list.md`.
 
 How/when: **sideloaded** (in Downloads, not Play) ~**2026-05-18/19**. To land,
 "install unknown apps" had to be granted to some downloader and Auto Blocker

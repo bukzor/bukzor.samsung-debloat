@@ -27,5 +27,7 @@ the earliest infection anchor and predates the dropper APK (2026-05-25),
 suggesting the ad component was active for at least a week.
 
 This is residue left behind after the user's uninstalls — the owning app may
-already be gone. Confirms an ad-fraud/adware family was present; does not by
+already be gone. Decode attempted: the 96-byte blob is high-entropy and is not
+valid base64→text, consistent with an encrypted identifier — so it does **not**
+name the owning app. Confirms an ad-fraud/adware family was present; does not by
 itself name it.

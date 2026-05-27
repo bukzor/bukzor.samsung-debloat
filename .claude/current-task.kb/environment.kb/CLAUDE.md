@@ -9,7 +9,7 @@ solved problem or misread a tool's output.
 
 Does NOT belong here: evidence-backed findings about the device
 (→ `../findings.kb/`), the task plan (→ `../mission.md`), or open questions
-(→ `../open-questions.md`).
+(→ `../open-questions.kb`).
 
 Add an entry the moment a piece of friction is resolved or a tool surprises us,
 so the next agent inherits the answer instead of the problem.

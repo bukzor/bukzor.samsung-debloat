@@ -16,13 +16,18 @@ flagged this). Captured after-the-fact:
   period the adware was active (artifacts dated 05-18→05-25). Either there was
   no recent reboot, or it predates the 21st.
 
-Immediate payload: the very first crash-buffer line is a **FATAL EXCEPTION in
-`com.forecasts.noaa.live.weather`** (2026-05-21) — a *fake "NOAA weather"* app,
-**not installed now** and **not** her legit `com.weather.Weather`. A strong
-patient-zero candidate (see `../open-question.kb/patient-zero-candidates.md`).
+Notable: the very first crash-buffer line is a **FATAL EXCEPTION in
+`com.forecasts.noaa.live.weather`** (2026-05-21) — a weather-*named*
+third-party package, **not installed now** and distinct from her legit
+`com.weather.Weather`. We have **not** examined this APK, so calling it "fake"
+or malicious is unverified; the suspicious name plus a crash in-window make it a
+**patient-zero candidate**, not a confirmed payload
+(see `../open-questions.kb/patient-zero-candidates.md`).
 
-Not yet mined: the **events buffer** (`logcat-events.txt`) for package
-install/remove events and which process wrote the dropper APK / `_.admaster`.
-Do this with the planned script (`../environment.kb/use-a-real-script-not-inline-bash.md`),
-not inline bash. logcat is volatile — re-capture if the phone reboots before
-analysis (`adb logcat -d -v year [-b events]`).
+Mined since, via `scripts/forensic_report.py`: the events buffer contains **no**
+package install/remove events, and the main/system buffers only cover the last
+~1 hour — so logcat **cannot** date the dropper install or attribute who wrote
+it. The crash buffer (back to 05-21) yields crashes-by-package only (and the
+`com.forecasts.noaa.live.weather` entry is a benign Firebase boot-race, not
+proof of malice). logcat is volatile — re-capture if the phone reboots
+(`adb logcat -d -v year [-b events]`).
