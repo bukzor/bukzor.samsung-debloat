@@ -1,5 +1,8 @@
 # Samsung Phone Debloat - 2025-11-12
 
+**Subject device:** mother's phone #1 — Verizon Samsung, since retired
+(`../devices.kb/mother-phone-01-verizon-samsung.md`).
+
 ## Objective
 
 Transform Samsung phone into a Pixel-like experience by removing bloatware and replacing Samsung apps with Google equivalents.

@@ -1,6 +1,21 @@
+--- # workaround: anthropics/claude-code#13003
+requires:
+    - Skill(llm-kb)
+depends:
+    - Skill(llm-collab)
+---
+
 # Buck's Samsung Android Debloating
 
 Transform Samsung phones into Pixel-like experience by removing bloatware via ADB without root.
+
+## Knowledge bases & docs
+
+- `docs/devices.kb/` — registry of physical devices worked on (owner, model,
+  lifecycle). The "which hardware"; the devlog is the "when".
+- `docs/devlog/` — chronological session history (each entry names its device).
+- `.claude/current-task.kb/` — **transient** working memory for the in-progress
+  task; delete or distil into a devlog when done.
 
 **Status:** "Works for me" personal tool. Use at your own risk.
 
@@ -44,6 +59,10 @@ adb connect <ip>:<connection-port>
 
 After reboot, requires fresh pairing with new ports.
 
+> **Crostini: use wireless ADB, not USB.** USB phones show in `lsusb` but `adb`
+> never enumerates them. mDNS auto-connects after `adb pair`. (Samsung Auto Blocker
+> greys out *USB* debugging only; re-enable it after.)
+
 ## App Replacements
 
 | Samsung                | Google                     | Status      |
@@ -58,6 +77,16 @@ After reboot, requires fresh pairing with new ports.
 | Samsung Notes          | Google Keep                | Uninstalled |
 | Samsung Calculator     | Google Calculator          | Uninstalled |
 | Samsung Voice Recorder | Voice Recorder (3rd party) | Uninstalled |
+
+## Intentionally Installed (Not Bloat)
+
+Deliberate; must NOT be flagged as bloat/malware in forensics or debloat passes:
+
+- **TeamViewer Host** (`com.teamviewer.host.market`) + **Universal Add-On
+  (Samsung)** (`com.teamviewer.quicksupport.addon.universal`) — unattended
+  remote support of family devices. The add-on alone is inert; Host is the
+  actual app. If only the add-on remains, reinstall Host. See README →
+  "Remote Support Readiness".
 
 ## Limitations
 

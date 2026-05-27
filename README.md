@@ -164,6 +164,23 @@ You likely already have: Messages, Photos, Calendar, Gmail, Files by Google
 - Core system framework
 - Hardware-specific services
 
+## Remote Support Readiness
+
+To support a family member's phone remotely, **TeamViewer is intentionally
+installed** — do **not** treat it as bloat or malware in future cleanups.
+
+- **TeamViewer Host** (`com.teamviewer.host.market`) — unattended remote
+  support; signed into the helper's TeamViewer account.
+- **TeamViewer Universal Add-On (Samsung)**
+  (`com.teamviewer.quicksupport.addon.universal`) — required on Samsung to allow
+  remote _screen control_. It pairs with Host (or QuickSupport) and does nothing
+  on its own.
+
+After setup, verify Host shows **online** in your TeamViewer account and that a
+test session can both view and control the screen. If only the Universal Add-On
+is present, the main app was removed and remote support is broken — reinstall
+Host.
+
 ## Limitations Without Root
 
 **Cannot change:**

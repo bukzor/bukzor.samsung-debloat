@@ -1,5 +1,9 @@
 # Samsung Phone Debloat - Project Cleanup - 2025-11-13
 
+**Subject device:** mother's phone #1 — Verizon Samsung, since retired
+(`../devices.kb/mother-phone-01-verizon-samsung.md`). (Cleanup/refactor session;
+no device interaction.)
+
 ## Objective
 
 Clean up and refactor the debloat project from previous session, eliminating duplicates and improving script architecture.
