@@ -16,9 +16,11 @@ JSONL of array-indexed records (one per event). Known indices:
 URLs carry `authuser=6` (her account is browser index 6 — "one among several").
 Coverage: 2026-04-29 → 05-26, ~1605 events, **1587 on SM-S926U**, 13 on the
 Hisense TV. **Unique value: per-event device attribution** (proves an event is
-on the phone, not the TV) and it is the most-recent/live snapshot. jq tools:
-`scripts/myactivity.google.com{,.gap-analysis}.jq` (these do *not* yet read the
-device field — extract it with a `json.JSONDecoder().raw_decode` loop).
+on the phone, not the TV) and it is the most-recent/live snapshot. Tools over
+this positional-array JSONL: `scripts/myactivity_scrape.py` (Python decoder →
+structured events, **incl. the device tag**); or the jq trio —
+`scripts/myactivity.google.com.jq` (human-readable TSV), `.records.jq` (tidy
+JSONL incl. device), `.gap-analysis.jq` (coverage span + silent-window gaps).
 
 ## 2. Takeout export — `forensics/takeout-20260527/Takeout/My Activity/*/`
 
