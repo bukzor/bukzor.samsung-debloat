@@ -1,0 +1,102 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Android-app reputation frontmatter
+description: |
+  Frontmatter for items in android-apps.kb/. Each item is one Android package's
+  reputation judgement. The kb is flat — one file per package, named for the
+  package id — and the verdict lives in the `verdict` field below.
+
+type: object
+required:
+  - package
+  - verdict
+  - source
+  - last-updated
+
+properties:
+  package:
+    type: string
+    pattern: '^[A-Za-z][A-Za-z0-9_.]+$'
+    description: Exact package id; must equal the filename stem.
+  verdict:
+    enum: [legitimate, adware, malware, unknown]
+    description: |
+      Reputation verdict. legitimate = a real app from an identifiable
+      developer doing its stated job (may be ad-supported); adware = intrusive
+      ads / scareware / launcher hijack operating within its granted
+      permissions; malware = covert capability abuse beyond ad-spam (reserve for
+      real device-side or corroborated evidence); unknown = researched but
+      evidence insufficient to place. Strength of the call rides on `confidence`.
+  name:
+    type: string
+    description: Human app name (or last-seen title).
+  category:
+    type: string
+    description: Short functional tag (game, weather, cleaner, applock, ...).
+  confidence:
+    oneOf:
+      - const: high
+      - const: medium
+      - const: low
+    description: Confidence in the verdict given the cited source.
+  delisted:
+    type: boolean
+    description: |
+      Exact package no longer resolves to a live Play listing although it was
+      Play-served when last visited (per My Activity) — Play removed it. High
+      signal, orthogonal to the verdict.
+  source:
+    type: string
+    description: URL or short note justifying the verdict ("-" if none found).
+  last-updated:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}$'
+  probe:
+    type: object
+    description: |
+      Structured Google Play signals from scripts/app_reputation_probe.py,
+      applied via md-frontmatter-set. Machine-sourced and dated; orthogonal to
+      the verdict (`verdict` field) and the body prose, which stay the human
+      judgement. ``found: false`` means no live listing (the delisted tell).
+    required:
+      - date
+      - found
+    properties:
+      date:
+        type: string
+        pattern: '^\d{4}-\d{2}-\d{2}$'
+        description: When the probe ran.
+      found:
+        type: boolean
+        description: False => Play has no live listing for the exact package id.
+      developer:
+        type: string
+      developer_id:
+        type: string
+      developer_email:
+        type: string
+      developer_website:
+        type: string
+      genre:
+        type: string
+      min_installs:
+        type: integer
+      score:
+        type: number
+      ratings:
+        type: integer
+      ad_supported:
+        type: boolean
+      contains_ads:
+        type: boolean
+      permissions:
+        type: array
+        items:
+          type: string
+        description: |
+          Human-readable Play permission strings. A permission mismatched to the
+          app's stated function (a cleaner that can read contacts / call numbers
+          / capture the screen) is the malware tell — flags a candidate for
+          device-side appops proof, not a malware verdict on its own.
+    additionalProperties: false
+
+additionalProperties: false
