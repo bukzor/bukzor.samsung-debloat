@@ -21,6 +21,16 @@ evidence. Until the read-only capture is reviewed and the user is satisfied:
 - **Do not** uninstall more apps, reboot unnecessarily, or run any "cleaner"
   app (those are the malware category).
 
+### Data-preservation gate (added 2026-05-27, user-imperative)
+
+We will **NOT** proceed anywhere near wiping the phone until we are satisfied
+that we need **NONE** of the content currently on the phone. This is a separate,
+stronger gate than the forensics gate above: even after patient zero is named
+(or ruled unrecoverable), the wipe stays blocked until *all* wanted user content
+— photos, videos, messages/SMS, contacts, call logs, app data, documents,
+downloads, authenticator seeds, anything — is backed up and the user has
+explicitly confirmed nothing else is needed. When in doubt, do not wipe; ask.
+
 ## Card-fraud stance
 
 Treat the adware and the card fraud as *possibly* linked but probably

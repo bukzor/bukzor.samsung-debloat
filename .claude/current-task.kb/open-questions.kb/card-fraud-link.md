@@ -10,6 +10,11 @@ the leading explanation.
 Still to rule out the technical channel: the dropper is now identified as the
 Tencent 应用宝 app store (`../findings.kb/dropper-is-tencent-app-store.md`) — a
 silent-install/ad gateway, not itself a card-stealer, but it could have
-installed one. So recover the removed-apps list (`removed-apps-list.md`) to find
-patient zero, and review account-side Google Play **purchase + subscription**
-history and Google **Security Checkup** (unknown devices/sessions).
+installed one.
+
+**Concrete next step — data already in hand, unanalyzed:** the Takeout under
+`forensics/takeout-20260527/` contains `Google Pay/` (transactions CSVs, money
+sends/requests) and Play `Order History.json` / `Purchase History.json` /
+`Subscriptions.json`. Mine these for fraudulent charges or rogue subscriptions
+(no device needed). Still also: Google **Security Checkup** (unknown
+devices/sessions) and Play **Protect** history.

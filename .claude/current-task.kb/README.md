@@ -24,26 +24,33 @@ constraint.
 
 ## State as of last-updated
 
-Read-only capture taken (`forensics/20260526-182045-SM-S926U/`) and analyzed with
-the new `scripts/forensic_report.py`. Active malware is **already removed** by the
-user's uninstall spree; the Downloads dropper is the sideloaded **Tencent 应用宝
-app store** (a *secondary* payload; the `_.admaster/` residue predates it).
-**Install-source analysis** of all 48 surviving third-party apps shows them
-**100% store-installed (zero sideloads)**, and this phone is a **2025-12-26
-restore** — so the dropper and **patient zero were uninstalled and are purged
-from `dumpsys package`**. The first passive capture is therefore **exhausted**
-for naming patient zero; the *device itself is not* (see `forensic-sources.kb/`).
-TeamViewer is the user's own tool (ruled out); its Host app was removed —
-reinstall during post-wipe readiness. Nothing wiped yet.
+**Account-side My Activity is now the spine of the case** (two captures: the live
+scrape `forensics/myactivity.google.com.json` + the Takeout export under
+`forensics/takeout-20260527/`, parsed by `scripts/myactivity_takeout.py`; see
+`environment.kb/two-myactivity-captures-complementary.md`). Established this
+session — the adware was an **~80-package PPI bundle, Play-Store-installed**,
+that **detonated 2026-05-18** as a single-day store-deeplink burst (first event
+**07:09:27**; 165 "Visited" + 49 "Used" that day; **zero junk activity after
+05-18 21:11**, dual-source confirmed). The full chain is in `timeline.kb/`. The
+older 3 "candidates" are minor leaf members — **do not anchor on them**
+(`open-questions.kb/patient-zero-candidates.md`).
+
+The **seed/controller is off-Play**: the trigger window **05-18 04:53→07:09:27**
+is silent in *every* retained source (cloud + device), so it was a non-synced
+browser action or a headless sideload. **Leading seed candidate:
+`com.open.web.ai.browser`** ("AI Browser") — sideloaded, no Play telemetry,
+**Samsung-Device-Care-flagged**, ties to the Chrome **Yahoo search-hijack**;
+uninstalled 05-26 08:52. **Undated** and unconfirmed (`findings.kb/`). The Tencent
+应用宝 APK is **downstream** (filename 05-19 / mtime 05-25), not the enabler.
+Active malware already gone by capture; TeamViewer ruled out. Nothing wiped —
+and a **data-preservation gate** now blocks the wipe until all wanted content is
+backed up (`mission.md`).
 
 Next steps, in order:
 1. **Reconnect ADB** (`environment.kb/adb-reconnect-and-durable-endpoint.md`).
-2. **Sweep the device sources** in `forensic-sources.kb/` — the DownloadManager db
-   (who fetched the dropper) and `/sdcard/Android/*` leftovers can name a package
-   directly; dropbox/batterystats reach before the logcat crash buffer. Run the
-   no-device analyses meanwhile (`forensic-analyses.kb/`: usagestats-earliest-seen,
-   install-timeline-clustering, residual-appops/overlay mining).
-3. **Account-side Play Library** for the definitive removed-app list
-   (`open-questions.kb/removed-apps-list.md`).
-4. Only once patient zero is named or proven unrecoverable: **wipe + de-Samsung**
-   (reinstall TeamViewer Host as readiness).
+2. **DownloadManager db + Samsung Internet history** — the only sources that can
+   *date* the seed / `com.open.web.ai.browser` and reveal the silent-window
+   browser action; plus residual overlay/install-unknown appop holders.
+3. **Account-side Play Protect history** — may name/date the removed seed.
+4. **Backup-everything, verified** (photos, messages, contacts, app data, …) —
+   the hard gate — **then** wipe + de-Samsung (reinstall TeamViewer Host).
