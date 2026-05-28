@@ -1,3 +1,17 @@
+[project]
+name = "samsung-debloat"
+version = "0.1.0"
+description = "Samsung Android debloating and forensics tooling"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.2",
+]
+
 [tool.pytest.ini_options]
+testpaths = ["scripts"]
 python_classes = ["Describe*", "When*", "Test*"]
 python_functions = ["it_*", "test_*"]
