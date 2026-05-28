@@ -16,3 +16,7 @@ Always cite the artifact the finding rests on, by capture name under
 `forensics/<timestamp>/` (e.g. `appop-overlay.txt`, `downloads-listing.txt`).
 When new evidence shifts a finding, edit it in place and bump `last-updated`;
 flip `status` to `ruled-out` rather than deleting a dismissed hypothesis.
+
+On an uncertain finding (not `confirmed`, or `confidence` below high), set
+`verify-via` to the `forensic-analyses.kb` id(s) that would firm it up — the
+explicit link from a claim to the analysis meant to settle it.

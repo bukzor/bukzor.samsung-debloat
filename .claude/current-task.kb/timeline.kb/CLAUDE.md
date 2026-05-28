@@ -30,8 +30,8 @@ fields:
   containing spaces.
 - `relates-to:` — thread(s): `[adware]`, `[card-fraud]`, `[general]`.
 
-No `*.jsonschema.yaml` is wired for this collection yet (so `kb-validate` does
-not enforce the above) — keep the fields consistent by hand until one is added.
+These fields are enforced by `../timeline.jsonschema.yaml` (single-event `when:`
+XOR range `start:`/`end:`, offset mandatory); run `bin/llm.kb-validate`.
 
 The body says what happened, in which source it is visible, and what it means
 for the chain. Coarse/`Used` Play snapshots bound *that an app ran in a window*,

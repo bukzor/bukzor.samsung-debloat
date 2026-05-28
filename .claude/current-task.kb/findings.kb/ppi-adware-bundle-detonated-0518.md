@@ -65,3 +65,13 @@ and residual overlay/appop holders (`appop-overlay.txt`,
 19:20 — identical timestamps across many apps), so they bound *that an app ran in
 a window*, not when. `Visited` events are **precise** (per store-page open) and
 drive the timeline above.
+
+## Device-attribution verified (2026-05-27)
+
+My Activity is account-wide across 5 devices (see
+`myactivity-is-account-wide-cascade-is-phone.md`), so "on the phone" needed
+proof. The live scrape's per-event device tag (parsed by
+`scripts/myactivity_scrape.py`) shows the entire **2026-05-18 cascade is tagged
+`samsung SM-S926U` — 0 events on the Chromebook or TV**. The cascade packages
+also have **0 hits in `Library.json`**, confirming the "Visited"-majority were
+deep-link popups never acquired, not installs.

@@ -1,6 +1,6 @@
 ---
-start: 2026-05-18T07:09:27-05:00
-end: 2026-05-18T07:36:47-05:00
+start: "2026-05-18T07:09:27-05:00"
+end: "2026-05-18T07:36:47-05:00"
 relates-to: [adware]
 sources:
   - "forensics/takeout-20260527/Takeout/My Activity/Google Play Store/MyActivity.html"

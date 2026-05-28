@@ -10,7 +10,17 @@ The real patient zero is the **seed/controller**: the app that, the morning of
 2026-05-18 (between ~05:00 and the first cascade event at 07:09:27), began
 throwing Play-deeplink popups and/or auto-installing the family. It is **not in
 the Play usage telemetry** — no junk-family event predates 07:09 — so it is
-headless or sideloaded (likely the Tencent 应用宝 thread, or another sideload).
+headless or sideloaded: an off-Play controller holding **overlay and/or
+accessibility** (on Android 16 the over-everything popups + "Settings closes
+itself" require it). The Tencent 应用宝 APK is **downstream** (05-19→05-25), a
+later distributor, not the morning trigger.
+
+**Ruled out as the seed:** `com.open.web.ai.browser` — once the leading
+candidate, now a confirmed live **adware** Play browser lacking
+overlay/accessibility/install
+(`../findings.kb/open-web-ai-browser-seed-candidate.md`). The best *surviving*
+overlay/accessibility holder is `com.sunteame.superhomescreen`, but it appeared
+mid-cascade (07:16:40), so it is not the initial seed either.
 
 How to resolve (device-side, needs ADB reconnect):
 

@@ -31,6 +31,20 @@ come from the not-yet-swept device sources in `../forensic-sources.kb/` or
 account-side (`../open-questions.kb/removed-apps-list.md`). The first passive
 capture is **exhausted** for this purpose; the *device* is not.
 
+## Independent corroboration (account-side Takeout, 2026-05-27)
+
+Two account-side sources confirm the above from a different angle than
+`dumpsys`:
+
+- **`Installs.json`** (account-side current-library, 184 records on this phone):
+  every install for **2026-05-01 → 05-26 is an ordinary app** (TikTok, LinkedIn,
+  Yelp, Instagram, card games, Weather Channel, Temu, Samsung Messaging/Calendar)
+  — **no junk title installed on or around 05-18**. Consistent with the junk
+  being removed: it is current-library-only, so purged apps are absent here too.
+- **`Devices.json`**: this phone's `deviceRegistrationTime` is **2025-12-26**,
+  independently confirming the restore/setup anchor (the package-db
+  `firstInstallTime` cluster is the same day).
+
 ## Lesson: gate every candidate on window + "malware already gone"
 
 Three false leads this session each came from trusting a weak surface signal

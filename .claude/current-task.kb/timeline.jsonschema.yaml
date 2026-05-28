@@ -1,0 +1,45 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Timeline-entry frontmatter
+description: |
+  Frontmatter for items in timeline.kb/. Each item is one moment or one bounded
+  interval in the reconstructed infection chain. A single event uses `when:`; a
+  range uses `start:`/`end:` (exactly one of the two forms). Timestamps are
+  ISO-8601 to seconds WITH offset (e.g. 2026-05-18T07:09:27-05:00) — the offset
+  is mandatory here even though filenames drop it.
+
+type: object
+required:
+  - sources
+  - relates-to
+
+properties:
+  when:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$'
+    description: Single-event local timestamp, ISO-8601 with offset.
+  start:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$'
+    description: Range start, ISO-8601 with offset.
+  end:
+    type: string
+    pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$'
+    description: Range end, ISO-8601 with offset.
+  sources:
+    type: array
+    items: {type: string}
+    description: Cited artifacts (Takeout/forensics paths or a scripts/ tool).
+  relates-to:
+    type: array
+    items:
+      oneOf:
+        - const: adware
+        - const: card-fraud
+        - const: general
+    description: Which investigation thread(s) this moment bears on.
+
+oneOf:
+  - required: [when]
+  - required: [start, end]
+
+additionalProperties: false

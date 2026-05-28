@@ -1,50 +1,49 @@
 ---
-status: suspected
-confidence: medium
+status: ruled-out
+confidence: high
 relates-to: [adware]
-last-updated: "2026-05-27"
+last-updated: "2026-05-28"
 ---
 
-# `com.open.web.ai.browser` ("AI Browser") — leading seed candidate
+# `com.open.web.ai.browser` ("AI Browser") — RULED OUT as seed/controller
 
-Surfaced from `usagestats.txt` recent-task **Token 251**, which captures the
-uninstall flow on **2026-05-26 08:52**:
+Earlier (2026-05-27) this was the *leading* seed candidate, on the premise it was
+an **off-Play sideload** that drove the cascade and the Yahoo search-hijack.
+Re-probed 2026-05-28 (after `google-play-scraper` was added this session) — **the
+premise is false on every count**:
 
-```
-Device Care → com.samsung.android.sm.cleaner.ui.SuspiciousAppsActivity
-  → com.open.web.ai.browser → packageinstaller UninstallerActivity (uninstalling)
-```
+1. **Not off-Play.** It's a live, long-listed Play app: AdPulse INC, **10M
+   installs, 4.7★**, on Play since 2025-06 (8 Wayback snapshots, status 200),
+   updated 2026-05-25. The original "off-Play / sideloaded" call mistook *"no Play
+   telemetry on this device"* for *"not a Play app"* — a guess the reputation
+   probe (not runnable when the finding was written) refutes in one call.
+2. **Lacks the capability to be the controller.** The observed behaviour —
+   zero-interaction overlays *over other apps*, "Settings closes itself", silent
+   installs — needs `SYSTEM_ALERT_WINDOW` + accessibility + install permission. It
+   holds **none** (17 perms: location/camera/mic/accounts/storage/network). Its
+   ads are **in-app interstitials only** (per reviews), exactly a no-overlay app's
+   ceiling.
+3. **Doesn't explain the Yahoo hijack.** Reviews say it wraps **Google** (behind
+   forced ads), and with no system permissions it cannot change Chrome's default
+   search.
 
-i.e. **Samsung Device Care's own SuspiciousApps scanner flagged it**, and she
-uninstalled it through that flow.
+**What it actually is:** aggressive adware / PUA browser — relentless in-app ads,
+scareware ad creatives, identifier harvesting, planted 5★ reviews inflating the
+score. Reclassified there: `../android-apps.kb/com.open.web.ai.browser.md`
+(verdict `adware`, full probe).
 
-## Why it fits the seed profile
+**What survives (consistent with adware, not seed):** it was on the device,
+**Samsung Device Care SuspiciousApps flagged it**, and it was uninstalled
+2026-05-26 08:52 (`../timeline.kb/2026-05-26T08:52:03--cleanup-and-problem-period-end.md`).
+Samsung flagging abusive adware ≠ it being the controller.
 
-- **Off-Play / sideloaded.** Absent from *both* My-Activity captures, from
-  Takeout `Library.json`/`Installs.json`, and from the package db — present only
-  as residual recent-task tokens (it had **no Play app-usage telemetry**). This
-  matches the silent-window conclusion that the trigger was off-Play
-  (`../timeline.kb/2026-05-18T04:53:20-2026-05-18T07:09:27--silent-trigger-window.md`).
-- **A browser** → explains the **Yahoo default-search hijack** seen in Chrome
-  history at 07:33–07:36 on 05-18.
-- **Samsung-flagged suspicious** — an independent on-device verdict.
-- **Archetype match.** Security reporting describes a current family of Android
-  trojans using a hidden WebView / "AI browser" for click-fraud, sideloaded from
-  third-party APK sites (bleepingcomputer.com "New Android malware uses AI to
-  click on hidden browser ads"). A browser can also fire `market://` deeplinks,
-  which would drive the Play-Store "Visited" cascade.
+**Consequence:** patient zero / the controller is **unnamed again**. The
+silent-window conclusion (trigger left no synced trace) stands on its own and
+does not depend on this app. The best *surviving* overlay/accessibility holder is
+`com.sunteame.superhomescreen`, but it appeared mid-cascade (07:16:40), so it is
+not the initial seed either.
 
-## Caveats — not yet a conviction
-
-- **Undated.** No capture timestamps its arrival (purged on uninstall); cannot
-  place it in the 05-18 silent window vs earlier.
-- **Not confirmed as the cascade driver** — fits, but unproven; could be one of
-  several bad sideloads. Gate per the false-lead lesson
-  (`install-source-of-survivors.md`).
-
-## How to resolve
-
-DownloadManager db (its APK download time + source URL, if sideloaded via a
-download), Play Protect history (may name/dated its removal), or ask the user
-whether she recalls installing an "AI Browser". All need the ADB reconnect or
-account-side access.
+**Method lesson (3rd instance):** a candidate was anchored on a name/archetype
+("AI browser click-fraud trojan") and an unverified provenance guess, never
+checked against the live Play listing — exactly the false-lead pattern in
+`install-source-of-survivors.md`. Probe the listing before believing a name.

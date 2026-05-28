@@ -1,5 +1,5 @@
 ---
-last-updated: "2026-05-27"
+last-updated: "2026-05-28"
 ---
 
 # Current task — at a glance
@@ -35,22 +35,34 @@ that **detonated 2026-05-18** as a single-day store-deeplink burst (first event
 older 3 "candidates" are minor leaf members — **do not anchor on them**
 (`open-questions.kb/patient-zero-candidates.md`).
 
-The **seed/controller is off-Play**: the trigger window **05-18 04:53→07:09:27**
-is silent in *every* retained source (cloud + device), so it was a non-synced
-browser action or a headless sideload. **Leading seed candidate:
-`com.open.web.ai.browser`** ("AI Browser") — sideloaded, no Play telemetry,
-**Samsung-Device-Care-flagged**, ties to the Chrome **Yahoo search-hijack**;
-uninstalled 05-26 08:52. **Undated** and unconfirmed (`findings.kb/`). The Tencent
+The **trigger was most likely web, not an app**: the window **05-18
+04:53→07:09:27** is silent in *every* retained source, and a dense-capture check
+(04-29→05-26, 37–67 events/day) finds **no controller-profile app** in the
+>2-week run-up — so the favored reading is a **malvertising page tapped in
+Samsung Internet** (history not in Takeout), firing the deep-link storm with **no
+installed seed**. `com.sunteame.superhomescreen` (accessibility+overlay, visible
+mid-cascade) **escalates** the problem but does not initiate it.
+`com.open.web.ai.browser`
+("AI Browser") was the leading candidate but is **ruled out** (2026-05-28) — it's
+a live adware Play browser lacking overlay/accessibility/install, so neither
+off-Play nor capable of being the controller; it doesn't explain the Yahoo
+hijack either (`findings.kb/open-web-ai-browser-seed-candidate.md`). The Tencent
 应用宝 APK is **downstream** (filename 05-19 / mtime 05-25), not the enabler.
 Active malware already gone by capture; TeamViewer ruled out. Nothing wiped —
 and a **data-preservation gate** now blocks the wipe until all wanted content is
 backed up (`mission.md`).
 
 Next steps, in order:
-1. **Reconnect ADB** (`environment.kb/adb-reconnect-and-durable-endpoint.md`).
-2. **DownloadManager db + Samsung Internet history** — the only sources that can
-   *date* the seed / `com.open.web.ai.browser` and reveal the silent-window
-   browser action; plus residual overlay/install-unknown appop holders.
-3. **Account-side Play Protect history** — may name/date the removed seed.
+1. **Get the device in hand / reconnect ADB** (`environment.kb/adb-reconnect-and-durable-endpoint.md`).
+2. **HIGHEST forensic priority — test the favored "web-initiated" reading:**
+   - **Samsung Internet history** (manual on-device review of 05-18 04:53→07:30)
+     — *the* source that could show the malvertising page that initiated it; not
+     in Takeout (`forensic-sources.kb/storage.kb/samsung-internet-history.md`).
+   - **DownloadManager db** — names what fetched any sideload incl. the Tencent
+     APK, with timestamp + source URL
+     (`forensic-sources.kb/storage.kb/download-manager-db.md`).
+   Rationale: `timeline.kb/2026-05-18T04:53:20-2026-05-18T07:09:27--silent-trigger-window.md`.
+3. **Account-side Play Protect history** — may name/date a removed app; plus
+   residual overlay/install-unknown appop holders.
 4. **Backup-everything, verified** (photos, messages, contacts, app data, …) —
    the hard gate — **then** wipe + de-Samsung (reinstall TeamViewer Host).

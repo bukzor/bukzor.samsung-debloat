@@ -2,6 +2,7 @@
 status: confirmed
 confidence: medium
 relates-to: [card-fraud]
+verify-via: [sms-interceptor, removed-apps-recovery]
 last-updated: "2026-05-26"
 ---
 

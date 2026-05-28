@@ -9,8 +9,11 @@ resolved, including the **~81-app junk family** (names + per-day activity) — s
 `../findings.kb/ppi-adware-bundle-detonated-0518.md` and the gitignored
 `forensics/myactivity-playstore-summary.tsv`.
 
-Residual, still un-pulled (need account/device): Play **Protect** scan history
-(named + *dated* removals — may name/date the seed) and Play **Library** (install
-source). Note the leading seed candidate `com.open.web.ai.browser` is **off-Play**
-so it will **not** appear in Library — Protect or the DownloadManager db are the
-paths for it.
+Play **Library** is now **captured** (Takeout `Google Play Store/Library.json`
+under `forensics/takeout-20260527/`) but **un-mined as a whole**: diff it against
+currently-installed to enumerate the Play apps she removed (feeds
+`removed-apps-recovery` / `patient-zero-synthesis`). Still un-pulled (need
+account/device): Play **Protect** scan history (named + *dated* removals — may
+name/date the seed). (`com.open.web.ai.browser`, once floated as the seed, is
+**ruled out** — a live adware Play app, see
+`../findings.kb/open-web-ai-browser-seed-candidate.md`.)

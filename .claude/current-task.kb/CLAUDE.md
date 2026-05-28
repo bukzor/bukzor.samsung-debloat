@@ -27,6 +27,11 @@ masquerade as permanent project documentation.
   connect, toolchain quirks, data-handling, method caveats).
 - `open-questions.kb/` — currently-open known-unknowns, one per file; remove a
   file when its question is answered and write the answer into `findings.kb/`.
+- `android-apps.kb/` — per-package reputation verdicts (legitimate / adware /
+  malware / unknown, plus a `delisted` flag), one flat file per package with the
+  verdict in frontmatter; schema'd by `android-apps.jsonschema.yaml`. Feeds the
+  "remove the known" residue tooling (`scripts/unknown-apps-timeline.jq` via
+  `scripts/android_apps_kb.py list`).
 
 Single-topic root `.md` files (mission, device, history) hold context that
 isn't a homogeneous collection; promote one to a `.kb/` only under growth

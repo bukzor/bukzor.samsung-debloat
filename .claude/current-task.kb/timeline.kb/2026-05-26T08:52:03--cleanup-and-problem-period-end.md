@@ -1,5 +1,5 @@
 ---
-when: 2026-05-26T08:52:03-05:00
+when: "2026-05-26T08:52:03-05:00"
 relates-to: [adware]
 sources:
   - forensics/20260526-182045-SM-S926U/usagestats.txt

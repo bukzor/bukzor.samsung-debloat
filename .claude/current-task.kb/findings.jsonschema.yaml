@@ -35,6 +35,15 @@ properties:
         - const: card-fraud
         - const: general
     description: Which investigation thread(s) the finding bears on.
+  verify-via:
+    type: array
+    items: {type: string}
+    description: |
+      For a not-yet-`confirmed` or lower-confidence finding: the
+      forensic-analyses.kb id(s) (file basename, sans .md) whose completion
+      would raise this finding's confidence or settle its status — the planned
+      path from "suspected" to "confirmed". Omit on confirmed/high findings that
+      need no further work.
   last-updated:
     type: string
     pattern: '^\d{4}-\d{2}-\d{2}$'
